@@ -38,3 +38,6 @@ nbdist/
 nbactions.xml
 nb-configuration.xml
 *.log
+
+*.rock
+*.src.rock
