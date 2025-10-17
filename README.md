@@ -22,6 +22,7 @@ You can install **Finch** directly from [LuaRocks](https://luarocks.org):
 
 ```bash
 luarocks install finch
+```
 
 Or clone manually: 
 
