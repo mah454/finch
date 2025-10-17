@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="finch.png" alt="JOS" width="300"/>
+  <img src="logo.png" alt="JOS" width="300"/>
 </p>
 
 # 🪶 Finch
