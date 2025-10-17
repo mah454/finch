@@ -11,7 +11,7 @@ and is lightweight enough to embed in any Lua environment (e.g., OpenResty, Ngin
 - 🧩 Minimal and dependency-free  
 - ⚙️ Simple route registration: `GET`, `POST`, etc.  
 - 🪶 Lightweight request and response helpers  
-- 🔥 Works with Nginx/OpenResty (`ngx`) or any Lua-based HTTP layer  
+- 🔥 Works with Nginx/OpenResty (`ngx`)
 - 🧠 Easy to extend with middleware and hooks  
 
 ---
@@ -30,3 +30,19 @@ git clone https://github.com/yourusername/finch.git
 cd finch
 luarocks make
 ``` 
+
+---
+
+## 🧰 Example Usage
+```
+local fw = require("framework")
+
+local function controller(req, resp)
+        resp.header("name", "ali")
+        resp.body("Hello dear")
+end
+
+fw.route("/", "POST", controller)
+
+fw.start()
+```
