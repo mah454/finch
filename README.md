@@ -54,7 +54,9 @@ fw.start()
 
 test : 
 ```shell
-# apt install httpie curl
+# install packages 
+> sudo apt install httpie curl
+
 # use curl
 > curl -s -X POST http://localhost:8080/ 
 Hello dear
