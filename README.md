@@ -1,6 +1,6 @@
 # 🪶 Finch
 
-**Finch** is a minimal and elegant framework for building RESTful APIs in pure **Lua**.  
+**Finch** is a minimal and lightweight framework for building RESTful APIs in pure **Lua**.  
 It provides a simple routing system, clean abstractions for handling requests and responses,  
 and is lightweight enough to embed in any Lua environment (e.g., OpenResty, Nginx).
 
