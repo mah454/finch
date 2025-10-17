@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="finch.png" alt="JOS" width="300"/>
+</p>
+
 # 🪶 Finch
 
 **Finch** is a minimal and lightweight framework for building RESTful APIs in pure **Lua**.  
