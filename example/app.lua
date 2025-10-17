@@ -6,6 +6,6 @@ local function handleRootReq(_, resp)
 	resp.body("Hello dear")
 end
 
-finch.route("/", "POST", handleRootReq)
+finch.route("/", "GET", handleRootReq)
 
 finch.start()

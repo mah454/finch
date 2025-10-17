@@ -47,7 +47,28 @@ local function controller(req, resp)
         resp.body("Hello dear")
 end
 
-fw.route("/", "POST", controller)
+fw.route("/", "GET", controller)
 
 fw.start()
+```
+
+test : 
+```shell
+# apt install httpie curl
+# use curl
+> curl -s -X POST http://localhost:8080/ 
+Hello dear
+
+# use http 
+> http GET http://localhost:8080/
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/json; charset=utf-8
+Date: Fri, 17 Oct 2025 16:16:09 GMT
+Server: openresty/1.27.1.2
+Transfer-Encoding: chunked
+name: ali
+
+Hello dear
+
 ```
