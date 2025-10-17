@@ -2,7 +2,7 @@ package = "finch"
 version = "0.1-2"
 source = {
 	url = "git+https://github.com/mah454/finch.git",
-	tag = "v0.1-2",
+	branch = "main"
 }
 
 description = {
