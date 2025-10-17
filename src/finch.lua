@@ -1,19 +1,19 @@
 local ngx = require("ngx")
-local logger = require("logger")
+local logger = require("finch.logger")
 
-local framework = {
+local finch = {
 	routes = {},
 }
 
-function framework.route(path, method, callback)
-	framework.routes[method .. "#" .. path] = {
+function finch.route(path, method, callback)
+	finch.routes[method .. "#" .. path] = {
 		path = path,
 		method = method,
 		callback = callback,
 	}
 end
 
-function framework.start()
+function finch.start()
 	local _path = ngx.var.uri
 	local _method = ngx.req.get_method()
 	ngx.req.read_body()
@@ -39,7 +39,7 @@ function framework.start()
 		end,
 	}
 
-	local route = framework.routes[_method .. "#" .. _path]
+	local route = finch.routes[_method .. "#" .. _path]
 	if route then
 		route.callback(req, resp)
 		return
@@ -49,4 +49,4 @@ function framework.start()
 	end
 end
 
-return framework
+return finch
