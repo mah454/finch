@@ -26,9 +26,9 @@ luarocks install finch
 Or clone manually: 
 
 ```
-git clone https://github.com/yourusername/finch.git
-cd finch
-luarocks make
+git clone https://github.com/yourusername/finch.git   
+cd finch   
+luarocks make   
 ``` 
 
 ---
